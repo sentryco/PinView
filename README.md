@@ -21,11 +21,9 @@ struct ContentView: View {
     @State private var pinCode: String = ""
 
     var body: some View {
-        PinView(pin: $pinCode, length: 4) // Set the length of the PIN code
-            .padding()
-            .onPinEntered { enteredPin in
-                print("Entered PIN: \(enteredPin)")
-            }
+        PinCodeView(count: 4) { pin in
+            Swift.print("On verify - pin: \(pin)")
+        }
     }
 }
 ```
