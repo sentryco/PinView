@@ -10,19 +10,19 @@ import SwiftUI
  * - Fixme: ⚠️️ Add a subtle storke to the button? later when we tweak design etc
  * - Description: This struct defines the style for a verify button, including its background color, text color, and padding.
  */
-public struct VerifyButtonStyle: ButtonStyle {
+internal struct VerifyButtonStyle: ButtonStyle {
    /**
     * - Description: The background color of the button.
     */
-   public let color: Color
+   internal let color: Color
    /**
     * - Description: The color of the button text.
     */
-   public let textColor: Color
+   internal let textColor: Color
    /**
     * - Description: The horizontal padding to apply to the button.
     */
-   public let padding: CGFloat
+   internal let padding: CGFloat
 }
 /**
  * Content
@@ -33,7 +33,7 @@ extension VerifyButtonStyle {
     * - Parameters:
     *   - configuration: The configuration for the button.
     */
-   public func makeBody(configuration: Configuration) -> some View {
+   internal func makeBody(configuration: Configuration) -> some View {
       configuration.label // Gets the label of the button
          .font(.system(.title3, design: .rounded)) // Sets the font style of the button text
          .fontWeight(.semibold) // Sets the font weight of the button text to semibold
@@ -71,7 +71,7 @@ extension Button {
     *  - Returns: A view styled as a verify button with the specified enabled state.
     */
    @warn_unqualified_access // Ref: https://www.hackingwithswift.com/quick-start/swiftui/how-to-make-swiftui-modifiers-safer-to-use-with-warn-unqualified-access
-   public func verifyButtonStyle(isEnabled: Bool) -> some View {
+   internal func verifyButtonStyle(isEnabled: Bool) -> some View {
       self.verifyButtonStyle(
          color: backgroundColor.opacity(isEnabled ? 0.3 : 0.2), // Adjusts the background color based on the enabled state
          textColor: textColor.opacity(isEnabled ? 0.8 : 0.4), // Adjusts the text color based on the enabled state
@@ -86,7 +86,7 @@ extension Button {
     *   - padding: The horizontal padding to apply to the button.
     * - Returns: A view styled as a verify button with the specified background and text colors.
     */
-   public func verifyButtonStyle(color: Color, textColor: Color, padding: CGFloat = 15) -> some View {
+   internal func verifyButtonStyle(color: Color, textColor: Color, padding: CGFloat = 15) -> some View {
       let style = VerifyButtonStyle(
          color: color, // Sets the background color of the button
          textColor: textColor, // Sets the color of the button text

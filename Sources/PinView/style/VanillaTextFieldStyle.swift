@@ -4,7 +4,7 @@ import SwiftUI
  * - Description: This style removes default text field behaviors such as autocorrection, autocapitalization, and keyboard suggestions to provide a cleaner and more controlled text input experience.
  * - Note: Alternate name: `CleanTextField`
  */
-public struct VanillaTextFieldStyle: TextFieldStyle {
+internal struct VanillaTextFieldStyle: TextFieldStyle {
    /**
     * - Description: Applies the vanilla text field style to the text field.
     * - Note: there is also: `.scrollDismissesKeyboard(.immediately)`
@@ -13,7 +13,7 @@ public struct VanillaTextFieldStyle: TextFieldStyle {
     * - Parameter configuration: The configuration to apply to the text field.
     * - Returns: A modified version of the text field with the vanilla text field style applied.
     */
-   public func _body(configuration: TextField<Self._Label>) -> some View {
+   internal func _body(configuration: TextField<Self._Label>) -> some View {
       configuration
          #if os(iOS)
          .keyboardType(.asciiCapable)  // Sets the keyboard type to ASCII capable, suitable for most common text input
@@ -29,7 +29,7 @@ extension View {
    /**
     * Style
     */
-   public var vanillaTextFieldStyle: some View {
+   internal var vanillaTextFieldStyle: some View {
       let tfStyle = VanillaTextFieldStyle()
       return self.textFieldStyle(tfStyle)
    }
