@@ -1,3 +1,5 @@
+[![Tests](https://github.com/sentryco/PinView/actions/workflows/Tests.yml/badge.svg)](https://github.com/sentryco/PinView/actions/workflows/Tests.yml)
+
 # PinView
 
 > A sleek PinCodeView for iOS and macOS
