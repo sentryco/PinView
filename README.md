@@ -44,3 +44,4 @@ PinView is available under the MIT license. See the LICENSE file for more info.
 - Add support for backspace 
 - Add note about limits with Preview vs Simulator vs Device 
 - Add note regarding textfield position changing when keyboard is shown / dismissed etc
+- Rename repo to PinCodeView
