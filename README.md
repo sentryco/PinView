@@ -15,7 +15,6 @@ PinView is a custom SwiftUI view designed to simplify the input of PIN codes in 
 - **Haptic feedback:** Provide physical feedback as users type the pin.
 - **Accessibility support:** Fully accessible to visually impaired users.
 
-
 ## Example:
 ```swift
 struct ContentView: View {
@@ -29,6 +28,12 @@ struct ContentView: View {
             }
     }
 }
+```
+
+## Swift Package Manager (SPM)
+
+```swift
+.package(url: "https://github.com/sentryco/PinView", branch: "main")
 ```
 
 ## License
