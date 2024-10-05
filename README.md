@@ -43,4 +43,4 @@ PinView is available under the MIT license. See the LICENSE file for more info.
 - Add obfuscation after iterating through pins
 - Add support for backspace 
 - Add note about limits with Preview vs Simulator vs Device 
-- Add note regarding textfield focus changing when keyboard is shown / dismissed etc
+- Add note regarding textfield position changing when keyboard is shown / dismissed etc
