@@ -28,6 +28,7 @@ internal struct VanillaTextFieldStyle: TextFieldStyle {
 extension View {
    /**
     * Style
+    * fix: ⚠️️ add doc
     */
    internal var vanillaTextFieldStyle: some View {
       let tfStyle = VanillaTextFieldStyle()

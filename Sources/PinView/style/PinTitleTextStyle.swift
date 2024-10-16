@@ -8,6 +8,7 @@ import SwiftUI
 public struct PinTitleTextStyle: ViewModifier {
    /**
     * Body
+    * - Parameter content: The content to be modified with the PinTitleTextStyle.
     */
    public func body(content: Content) -> some View {
       content

@@ -7,7 +7,7 @@ import UIKit
  * The tiny `sub-title-text` above `pin-code-input`
  * - Description: A view modifier that applies a subtle and smaller font style to sub-title text, typically used above pin code input fields to provide additional context or instructions.
  * - Note: Used in `bio-auth` and `pin-code-view`
- * - Note: alt name: PinSubTitleTextModifier
+ * - Note: Alt name: PinSubTitleTextModifier
  */
 public struct PinSubTitleTextStyle: ViewModifier {
    /**
@@ -30,7 +30,7 @@ public struct PinSubTitleTextStyle: ViewModifier {
  */
 extension Text {
    /**
-    * - Description: Applies the PinSubTitleTextStyle to the view.
+    * Applies the PinSubTitleTextStyle to the view.
     * - Returns: A view with the PinSubTitleTextStyle applied.
     */
    public var pinSubTitleText: some View {
@@ -51,7 +51,7 @@ extension Text {
       #if os(macOS)
       .padding(.horizontal)
       #endif
-   return ZStack {
+   return ZStack { // use PreviewContainer here. fenced in debug etc
       Rectangle() // A rectangle to fill the background
          .fill(Color.secondaryBackground) // Fills the rectangle with a secondary background color
          .ignoresSafeArea(.all) // Ignores the safe area on all sides

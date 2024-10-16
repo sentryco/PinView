@@ -67,12 +67,11 @@ extension PinModifier {
  */
 extension View {
    /**
+    * Applies a PinModifier to the view.
     * - Description: This function applies a PinModifier to the view. It takes a binding to a string, which represents the pin, and returns the view with the PinModifier applied. The PinModifier ensures that the pin only contains numeric characters and does not exceed a specified length.
+    * - Parameter pin: A binding to the string value that represents the pin. This value is modified by the PinModifier to enforce numeric input and length constraints.
     * ## Examples:
-    * view.pinModifier("1", true)
-    * - Parameters:
-    *   - pin: String
-    *   - isFocused: Focused or not
+    * view.pinModifier(pin: .constant("1234"))
     */
    func pinModifier(pin: Binding<String>) -> some View {
       let modifier = PinModifier(pin: pin)

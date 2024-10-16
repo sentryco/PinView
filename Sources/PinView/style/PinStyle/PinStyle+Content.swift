@@ -6,7 +6,7 @@ extension PinStyle {
    /**
     * Styles the content of the PinCodeView by applying a centered alignment, a frame with a specified width and height, and a background with a corner radius and a stroke that changes color based on focus state.
     * - Description: This function styles the content of the PinCodeView. It aligns the text to the center, sets a frame with a specific width and height, and applies a background with a corner radius. The stroke color of the background changes based on whether the pin is in focus or not.
-    * - Fixme: ⚠️️ use consts for width height values etc
+    * - Fixme: ⚠️️ Use consts for width height values etc
     * - Parameters:
     *   - content: The content to be styled.
     * - Returns: The styled content view.

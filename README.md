@@ -35,13 +35,30 @@ struct ContentView: View {
 .package(url: "https://github.com/sentryco/PinView", branch: "main")
 ```
 
-## License
+### Future improvements:
 
-PinView is available under the MIT license. See the LICENSE file for more info.
+1. **Focus Management & Backspace Functionality**
+   - Improve focus transitions and add backspace functionality for smooth user input.
 
-## Todo: 
-- Add obfuscation after iterating through pins
-- Add support for backspace 
-- Add note about limits with Preview vs Simulator vs Device 
-- Add note regarding textfield position changing when keyboard is shown / dismissed etc
-- Rename repo to PinCodeView
+2. **Obfuscation Feature**
+   - Implement PIN obfuscation to enhance security and user privacy. (Add obfuscation after iterating through pins)
+
+3. **Refactoring & Code Organization**
+   - Refactor code for better modularity and readability.
+
+4. **Accessibility Improvements**
+   - Review and improve accessibility features, including voice-over compatibility.
+
+5. **Preview & Testing Enhancements**
+   - Expand preview functionality to cover more scenarios for better UI testing.
+   - Add note about limits with Preview vs Simulator vs Device 
+
+6. **Styling & Theming Consistency**
+   - Use constants for styling values to ensure consistent theming.
+
+7. **Documentation & Code Comments**
+   - Address TODOs and FIXMEs related to documentation for better clarity and collaboration.
+
+8. **Miscellaneous**
+   - Add note regarding textfield position changing when keyboard is shown / dismissed etc
+   - Rename repo to PinCodeView?

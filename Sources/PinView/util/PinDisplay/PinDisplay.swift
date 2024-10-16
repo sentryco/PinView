@@ -7,7 +7,7 @@ import SwiftUI
  */
 public struct PinDisplay: View {
    /**
-    * - Description: The string to display
+    * The string to display
     */
    public let str: String
    /**

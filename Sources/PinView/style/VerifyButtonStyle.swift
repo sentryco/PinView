@@ -1,6 +1,7 @@
 import SwiftUI
 /**
  * Used in master-pass-view and pin-code-view
+ * - Abstract: This struct defines the style for a verify button, including its background color, text color, and padding.
  * - Description: A button style that provides visual feedback for verification actions, with a customizable background color, text color, and padding. It is designed to be used in contexts where a confirmation action is required, such as in master-pass-view and pin-code-view.
  * - Note: Ref this answer: https://stackoverflow.com/a/62678839/5389500
  * - Note: This var can also be moved to the modifier scope: https://stackoverflow.com/a/66381914/5389500
@@ -8,19 +9,18 @@ import SwiftUI
  * - Note: Alternative name: DisablableButton
  * - Fixme: ⚠️️ Add pressed state: see https://swiftuirecipes.com/blog/custom-swiftui-button-with-disabled-and-pressed-state
  * - Fixme: ⚠️️ Add a subtle storke to the button? later when we tweak design etc
- * - Description: This struct defines the style for a verify button, including its background color, text color, and padding.
  */
 internal struct VerifyButtonStyle: ButtonStyle {
    /**
-    * - Description: The background color of the button.
+    * The background color of the button.
     */
    internal let color: Color
    /**
-    * - Description: The color of the button text.
+    * The color of the button text.
     */
    internal let textColor: Color
    /**
-    * - Description: The horizontal padding to apply to the button.
+    * The horizontal padding to apply to the button.
     */
    internal let padding: CGFloat
 }
@@ -51,13 +51,17 @@ extension VerifyButtonStyle {
  * Convenience
  */
 extension Button {
-   // Defines the background color of the button based on the color scheme
+   /**
+    * Defines the background color of the button based on the color scheme
+    */
    fileprivate var backgroundColor: Color {
       let light: Color = .gray
       let dark: Color = .gray
       return .init(light: light, dark: dark)
    }
-   // Defines the text color of the button based on the color scheme
+   /**
+    * Defines the text color of the button based on the color scheme
+    */
    fileprivate var textColor: Color {
       let light: Color = .black
       let dark: Color = .white
