@@ -8,7 +8,9 @@ import UIKit
 extension PinCodeView {
    /**
     * The body of the PinCodeView, containing the layout and content of the view.
-    * - Description: The main view structure of the `PinCodeView`, which organizes the header, subtitle, pin input fields, and verify button into a vertical stack.
+    * - Description: The main view structure of the `PinCodeView`, which organizes
+    *                the header, subtitle, pin input fields, and verify button into
+    *                a vertical stack.
     * - Fixme: ⚠️️ Add the length? length of? elaborate
     */
    public var body: some View {
@@ -31,7 +33,9 @@ extension PinCodeView {
 extension PinCodeView {
    /**
     * Header
-    * - Description: The header text component of the `PinCodeView`, displaying the main title provided by the `titles` structure.
+    * - Description: The header text component of the `PinCodeView`, 
+    *                displaying the main title provided by the `titles` 
+    *                structure.
     */
    fileprivate var headerText: some View {
       Text(self.titles.title) // Displays the title of the PinCodeView
@@ -39,7 +43,9 @@ extension PinCodeView {
    }
    /**
     * Sub-title
-    * - Description: The subtitle text component of the `PinCodeView`, providing additional context or instructions to the user beneath the main title.
+    * - Description: The subtitle text component of the `PinCodeView`,
+    *                providing additional context or instructions to the user
+    *                beneath the main title.
     * - Fixme: ⚠️️ Move padding to const?
     */
    fileprivate var subTitleText: some View {
@@ -49,7 +55,9 @@ extension PinCodeView {
    }
    /**
     * Verify button
-    * - Description: This view represents the verification button in the PinCodeView. It is responsible for triggering the verification process when clicked.
+    * - Description: This view represents the verification button in the
+    *                PinCodeView. It is responsible for triggering the
+    *                verification process when clicked.
     * - Fixme: ⚠️️ Add vibration to verify button, one melody for success and one for fail etc, could / should this be done in caller or no?
     * - Fixme: ⚠️️ Add a subtle-stroke to the btn? or maybe make a style for the entire compoent? later maybe?
     * - Fixme: ⚠️️ Make the not disabled style have more color etc?
@@ -75,7 +83,9 @@ extension PinCodeView {
    }
    /**
     * Pins
-    * - Description: This view represents the pin code fields in the PinCodeView. It is responsible for displaying and managing the pin code input.
+    * - Description: This view represents the pin code fields in the
+    *                PinCodeView. It is responsible for displaying and managing
+    *                the pin code input.
     * - Note: We could refactor this further but readabilty becomes worse if we do
     * - Fixme: ⚠️️ Move into: EditablePinDisplay? or?
     * - Fixme: ⚠️️ Use 16px as spacing? and use const 👈

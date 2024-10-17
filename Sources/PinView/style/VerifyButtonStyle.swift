@@ -1,8 +1,13 @@
 import SwiftUI
 /**
  * Used in master-pass-view and pin-code-view
- * - Abstract: This struct defines the style for a verify button, including its background color, text color, and padding.
- * - Description: A button style that provides visual feedback for verification actions, with a customizable background color, text color, and padding. It is designed to be used in contexts where a confirmation action is required, such as in master-pass-view and pin-code-view.
+ * - Abstract: This struct defines the style for a verify button, including its
+ *             background color, text color, and padding.
+ * - Description: A button style that provides visual feedback for verification
+ *                actions, with a customizable background color, text color, and
+ *                padding. It is designed to be used in contexts where a
+ *                confirmation action is required, such as in master-pass-view
+ *                and pin-code-view.
  * - Note: Ref this answer: https://stackoverflow.com/a/62678839/5389500
  * - Note: This var can also be moved to the modifier scope: https://stackoverflow.com/a/66381914/5389500
  * - Note: Also works in the style scope: https://stackoverflow.com/a/69134893/5389500

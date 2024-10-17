@@ -1,7 +1,9 @@
 import SwiftUI
 /**
  * Preview - Shows single pin (Dark / Light - mode)
- * - Description: This preview section provides a visual representation of a single pin input field in both dark and light modes, allowing for design and functionality verification.
+ * - Description: This preview section provides a visual representation of a
+ *                single pin input field in both dark and light modes,
+ *                allowing for design and functionality verification.
  * - Fixme: ⚠️️ add a random pin value?
  */
 #Preview(traits: .fixedLayout(width: 300, height: 300)) { // (traits: .fixedLayout(width: 300, height: 300))

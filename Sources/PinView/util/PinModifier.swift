@@ -5,14 +5,22 @@ import SwiftUI
 struct PinModifier: ViewModifier {
    /**
     * A binding to the pin code string.
-    * - Description: This binding represents the pin code string that is being modified. It is a two-way binding, meaning that changes to the pin code string in the text field will update this binding, and changes to this binding will update the text field.
+    * - Description: This binding represents the pin code string that is being
+    *                modified. It is a two-way binding, meaning that changes to
+    *                the pin code string in the text field will update this
+    *                binding, and changes to this binding will update the text
+    *                field.
     */
    @Binding var pin: String
    /**
-    * - Description: This variable sets the maximum number of characters allowed in the pin input field. It is currently set to 1, meaning each pin input field can only hold one character.
-    * - Note: With this code the binding variable pin will be holding the value from our input field,
-    *         and the variable textlimit will be a placeholder for how many characters or the length of the value we want our input to receive,
-    *         in my case I want each input to hold just one value, so my textlimit variable is one.
+    * - Description: This variable sets the maximum number of characters
+    *                allowed in the pin input field. It is currently set to 1,
+    *                meaning each pin input field can only hold one character.
+    * - Note: With this code the binding variable pin will be holding the value
+    *         from our input field, and the variable textlimit will be a placeholder
+    *         for how many characters or the length of the value we want our input
+    *         to receive, in my case I want each input to hold just one value, so
+    *         my textlimit variable is one.
     * - Note: The function limitText takes an argument of type Integer upper and checks if the value on the input is greater than the upper argument.
     * - Note: If true, it will assign pin a new value that returns just the first character in the initial value provided.
     * - Fixme: ⚠️️ make this static?
@@ -24,7 +32,9 @@ struct PinModifier: ViewModifier {
  */
 extension PinModifier {
    /**
-    * This function is the entry point for the PinModifier view modifier. It takes a content view and applies the necessary modifications to it.
+    * - Description: This function is the entry point for the PinModifier view
+    *                modifier. It takes a content view and applies the necessary
+    *                modifications to it.
     * - Parameter content: The content view to be modified.
     * - Returns: The modified view.
     */
@@ -45,7 +55,9 @@ extension PinModifier {
 extension PinModifier {
    /**
     * Only allow 1 char in each text field
-    * - Description: This function limits the length of the input text to the specified upper limit. If the input text exceeds the upper limit, it trims the text to match the upper limit.
+    * - Description: This function limits the length of the input text to the
+    *                specified upper limit. If the input text exceeds the upper
+    *                limit, it trims the text to match the upper limit.
     * - Parameter upper: The max allowed number of characters
     */
    func limitText(_ upper: Int) {
@@ -55,7 +67,9 @@ extension PinModifier {
    }
    /**
     * Only allow numbers as input
-    * - Description: This function ensures that only numeric input is allowed in the pin. If the first character of the input is not a number, the pin is cleared.
+    * - Description: This function ensures that only numeric input is allowed
+    *                in the pin. If the first character of the input is not a
+    *                number, the pin is cleared.
     * - Note: Can also do: self.allSatisfy { character in character.isNumber }
     */
    func restrictToNumber() {
@@ -68,7 +82,10 @@ extension PinModifier {
 extension View {
    /**
     * Applies a PinModifier to the view.
-    * - Description: This function applies a PinModifier to the view. It takes a binding to a string, which represents the pin, and returns the view with the PinModifier applied. The PinModifier ensures that the pin only contains numeric characters and does not exceed a specified length.
+    * - Description: This function applies a PinModifier to the view. It takes
+    *                a binding to a string, which represents the pin, and returns the view
+    *                with the PinModifier applied. The PinModifier ensures that the pin only
+    *                contains numeric characters and does not exceed a specified length.
     * - Parameter pin: A binding to the string value that represents the pin. This value is modified by the PinModifier to enforce numeric input and length constraints.
     * ## Examples:
     * view.pinModifier(pin: .constant("1234"))

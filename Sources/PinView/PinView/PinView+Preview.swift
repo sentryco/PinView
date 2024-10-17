@@ -1,8 +1,13 @@
 import SwiftUI
 /**
  * Preview (dark / light mode)
- * - Description: This preview demonstrates the appearance and functionality of a single PinView instance in both dark and light modes. It initializes a PinView with the first field ID, no next pin, and binds the pin values and focus state to state variables. The view is padded, made to fill the available space, and its background color changes based on the current color scheme.
- * - Fixme: ⚠️️ prefill with random code? 
+ * - Description: This preview demonstrates the appearance and functionality
+ *                of a single PinView instance in both dark and light modes. It
+ *                initializes a PinView with the first field ID, no next pin,
+ *                and binds the pin values and focus state to state variables.
+ *                The view is padded, made to fill the available space, and its
+ *                background color changes based on the current color scheme.
+ * - Fixme: ⚠️️ prefill with random code?
  */
 #Preview(traits: .fixedLayout(width: 300, height: 300)) { // (traits: .fixedLayout(width: 300, height: 300))
    struct DebugView: View { // We need debug view for pin focus state to work etc

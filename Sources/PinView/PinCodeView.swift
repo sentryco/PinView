@@ -42,13 +42,17 @@ public struct PinCodeView: View {
    let titles: Titles // defaultTitles
    /**
     * Triggered when the verify button is pressed, passing the current pin code.
-    * - Description: The callback function that is invoked when the verify button is pressed. It provides the entered pin code as a parameter for further validation or processing.
+    * - Description: The callback function that is invoked when the verify
+    *                button is pressed. It provides the entered pin code as a
+    *                parameter for further validation or processing.
     * - Fixme: ⚠️️ Don't pass pin in callback, just use pin binding? it's fine for now, versatile
     */
    let onVerify: OnVerify?
    /**
     * Initializes a `PinCodeView` with the specified parameters.
-    * - Description: Initializes a `PinCodeView` with a specific number of digits, optional initial focus state, titles for context, and a verification callback.
+    * - Description: Initializes a `PinCodeView` with a specific number of digits,
+    *                optional initial focus state, titles for context, and a
+    *                verification callback.
     * - Parameters:
     *   - count: The number of digits in the pin code.
     *   - pinFocusState: The initial focus state of the pin fields.

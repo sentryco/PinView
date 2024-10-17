@@ -5,7 +5,9 @@ import UIKit
 #endif
 /**
  * The tiny `sub-title-text` above `pin-code-input`
- * - Description: A view modifier that applies a subtle and smaller font style to sub-title text, typically used above pin code input fields to provide additional context or instructions.
+ * - Description: A view modifier that applies a subtle and smaller font style
+ *                to sub-title text, typically used above pin code input
+ *                fields to provide additional context or instructions.
  * - Note: Used in `bio-auth` and `pin-code-view`
  * - Note: Alt name: PinSubTitleTextModifier
  */

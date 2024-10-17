@@ -1,7 +1,9 @@
 import SwiftUI
 /**
  * The text style used in the pin-code title input
- * - Description: A view modifier that applies a title2 font size and semibold weight to text, typically used for titles in pin code input screens.
+ * - Description: A view modifier that applies a title2 font size and semibold
+ *                weight to text, typically used for titles in pin code input
+ *                screens.
  * - Note: Alt name: `PinTitleTextModifier`
  * - Note: Used in `lockscreen`, `master-psw`, `bio-auth` and `pin-view`
  */

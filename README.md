@@ -38,7 +38,7 @@ struct ContentView: View {
 ### Future improvements:
 
 1. **Focus Management & Backspace Functionality**
-   - Improve focus transitions and add backspace functionality for smooth user input.
+   - Improve focus transitions and add backspace functionality.
 
 2. **Obfuscation Feature**
    - Implement PIN obfuscation to enhance security and user privacy. (Add obfuscation after iterating through pins)
@@ -62,3 +62,4 @@ struct ContentView: View {
 8. **Miscellaneous**
    - Add note regarding textfield position changing when keyboard is shown / dismissed etc
    - Rename repo to PinCodeView?
+   - Remove unit-tests. And add UI-tests?

@@ -1,9 +1,16 @@
 import SwiftUI
 /**
  * Single pin
- * - Description: This view modifier is designed to style a single pin in a pin code entry interface. It dynamically adjusts its appearance based on the focus state of the pin.
- * - Abstract: This view modifier is used in the context of the PinCodeView to style a single pin in a pin code entry interface. It dynamically adjusts its appearance based on the focus state of the pin.
- * - Note: This modifier is intended to be used in conjunction with a text field or similar input view to create a visually appealing and interactive pin entry experience.
+ * - Description: This view modifier is designed to style a single pin in a pin
+ *                code entry interface. It dynamically adjusts its appearance
+ *                based on the focus state of the pin.
+ * - Abstract: This view modifier is used in the context of the PinCodeView to
+ *             style a single pin in a pin code entry interface. It
+ *             dynamically adjusts its appearance based on the focus state of
+ *             the pin.
+ * - Note: This modifier is intended to be used in conjunction with a text
+ *         field or similar input view to create a visually appealing and
+ *         interactive pin entry experience.
  * - Fixme: ⚠️️ There is also native textfield modifier / style, maybe try that?
  * - Todo:
  *   - Explore the use of native text field modifier/style for potential improvements.

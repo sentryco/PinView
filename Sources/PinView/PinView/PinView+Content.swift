@@ -5,7 +5,11 @@ import SwiftUI
 extension PinView {
    /**
     * - Note If we set the "" it becomes the placeholder text it seems, we could override
-    * - Description: This view represents the body of the PinView. It contains a TextField that takes in the pin values. The TextField is styled and modified based on the pin's focus state and editing state. When a value changes, the focus shifts to the next TextField.
+    * - Description: This view represents the body of the PinView. It contains
+    *                a TextField that takes in the pin values. The TextField is
+    *                styled and modified based on the pin's focus state and
+    *                editing state. When a value changes, the focus shifts to
+    *                the next TextField.
     * - Fixme: ⚠️️ Change focus to the previous `InputField` If the user deletes the input value
     * - Fixme: ⚠️️ Not sure why we need the "" in TextField? access id?
     * - Fixme: ⚠️️ Move the onchange to own func?

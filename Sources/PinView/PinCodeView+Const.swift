@@ -57,14 +57,19 @@ extension PinCodeView {
 extension PinCodeView {
    /**
     * Callback signature for verifying the pin code.
-    * - Description: A closure that is called when the verification button is pressed, allowing the pin code to be verified.
+    * - Description: A closure that is called when the verification button
+    *                is pressed, allowing the pin code to be verified.
     * - Parameters:
     *   - pinCode: The pin code to be verified.
     */
    public typealias OnVerify = (_ pinCode: String) -> Void
    /**
     * Default callback on verify
-    * - Description: A default implementation of the `OnVerify` closure that simply prints the pin code for debugging purposes. This implementation is intended for use in previews or during development and should be replaced with a proper verification mechanism in production code.
+    * - Description: A default implementation of the `OnVerify` closure that
+    *                simply prints the pin code for debugging purposes. This
+    *                implementation is intended for use in previews or during
+    *                development and should be replaced with a proper
+    *                verification mechanism in production code.
     */
    public static let defaultOnVerify: OnVerify = { (_ pinCode: String) in
       let pinCode: String = Array(arrayLiteral: pinCode).joined(separator: "-")

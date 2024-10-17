@@ -5,7 +5,10 @@ import SwiftUI
 extension PinDisplay {
    /**
     * body
-    * - Description: This view represents the body of the PinDisplay. It creates a horizontal stack of Text views, each displaying a character from the input string. Each Text view is styled with a pin style.
+    * - Description: This view represents the body of the PinDisplay. It
+    *                creates a horizontal stack of Text views, each displaying
+    *                a character from the input string. Each Text view is styled
+    *                with a pin style.
     * - Fixme: ⚠️️ Why do we provide a default value .const?
     * - Fixme: ⚠️️ Use spacing const from constlib?
     */
