@@ -12,7 +12,6 @@ import SwiftUI
  * - Note: Suggestions on how to fix set focus on init: https://stackoverflow.com/questions/68073919/swiftui-focusstate-how-to-give-it-initial-value
  * - Fixme: ⚠️️⚠️️ Add backlash functionality (requires some exploration) 👉 Make it so that when we tap back-button we delete current then focus moves to prev pin-view, or is this in now?
  * - Fixme: ⚠️️⚠️️ Make it so that we can hide numbers we type so others can't see them, obfuscation feature
- * - Fixme: ⚠️️ Move to own package. possibly opensource
  */
 public struct PinCodeView: View {
    /**
