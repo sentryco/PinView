@@ -1,4 +1,5 @@
 [![Tests](https://github.com/sentryco/PinView/actions/workflows/Tests.yml/badge.svg)](https://github.com/sentryco/PinView/actions/workflows/Tests.yml)
+[![codebeat badge](https://codebeat.co/badges/f1161517-1999-4386-9377-ab552fdf7655)](https://codebeat.co/projects/github-com-sentryco-pinview-main)
 
 # PinView
 
