@@ -4,13 +4,13 @@ import PackageDescription
 let package = Package(
     name: "PinView",
     platforms: [
-        .macOS(.v14), 
+        .macOS(.v14),
         .iOS(.v17)
     ],
     products: [
         .library(
             name: "PinView",
-            targets: ["PinView"]),
+            targets: ["PinView"])
     ],
     dependencies: [
       .package(url: "https://github.com/sentryco/HybridColor", branch: "main"), // Dependency for HybridColor
