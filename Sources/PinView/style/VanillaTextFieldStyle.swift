@@ -31,7 +31,7 @@ internal struct VanillaTextFieldStyle: TextFieldStyle {
 extension View {
    /**
     * Style
-    * fix: ⚠️️ add doc
+    * - Description: Applies the vanilla text field style to the text field.
     */
    internal var vanillaTextFieldStyle: some View {
       let tfStyle = VanillaTextFieldStyle()
