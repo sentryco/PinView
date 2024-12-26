@@ -45,24 +45,14 @@ extension Text {
  * - Fixme: ⚠️️ Add custom frame for iPad
  */
 #Preview(traits: .fixedLayout(width: 300, height: 300)) {
-   let view = Text("Apple is the leading tech company")
-      .pinSubTitleText
-      .padding()
-      .frame(maxWidth: .infinity)
-      .background(Color.blackOrWhite.opacity(1))
-      #if os(macOS)
-      .padding(.horizontal)
-      #endif
-   return ZStack { // use PreviewContainer here. fenced in debug etc
-      Rectangle() // A rectangle to fill the background
-         .fill(Color.secondaryBackground) // Fills the rectangle with a secondary background color
-         .ignoresSafeArea(.all) // Ignores the safe area on all sides
-      VStack(spacing: .zero) { // A vertical stack with no spacing
-         view // The content view
-            .environment(\.colorScheme, .light) // Sets the environment to light mode
-         view // The content view again
-            .environment(\.colorScheme, .dark) // Sets the environment to dark mode
-      }
+   PreviewContainer {
+      Text("Apple is the leading tech company")
+         .pinSubTitleText
+         .padding()
+         .frame(maxWidth: .infinity)
+         .background(Color.blackOrWhite.opacity(1))
+         #if os(macOS)
+         .padding(.horizontal)
+         #endif
    }
-   .environment(\.colorScheme, .dark)
 }

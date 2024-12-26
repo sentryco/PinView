@@ -9,7 +9,7 @@ import SwiftUI
  * - Note: We automatically switch to other pin view when a number is entered
  * - Note: Alternative names: `PinDigitView`, `single-pin-view`
  * - Fixme: ⚠️️ Seems like there is an annoying autofill prompt. Not sure how to remove it, double check if its in simulator and or real device as well etc?
- * - Fixme: ⚠️️ I think this view could be a ViewModifier?
+ * - Fixme: ⚠️️ I think this view could be a ViewModifier? or a viewBuilder see swift-tips #49
  */
 struct PinView: View {
    /**

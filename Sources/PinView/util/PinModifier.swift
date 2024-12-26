@@ -1,6 +1,8 @@
 import SwiftUI
 /**
+ * - Fixme: ⚠️️ add abstract
  * - Note: Using @Environment(\.isFocused) var isFocused does not work - Fixme: ⚠️️ add reasoning?
+ * - Fixme: ⚠️️ split this file into many?
  */
 struct PinModifier: ViewModifier {
    /**
@@ -16,6 +18,7 @@ struct PinModifier: ViewModifier {
     * - Description: This variable sets the maximum number of characters
     *                allowed in the pin input field. It is currently set to 1,
     *                meaning each pin input field can only hold one character.
+    * - Fixme: ⚠️️ add abstract
     * - Note: With this code the binding variable pin will be holding the value
     *         from our input field, and the variable textlimit will be a placeholder
     *         for how many characters or the length of the value we want our input
@@ -50,7 +53,7 @@ extension PinModifier {
    }
 }
 /**
- * Ext - modifier
+ * Ext - Maniupulator
  */
 extension PinModifier {
    /**
@@ -91,7 +94,7 @@ extension View {
     * view.pinModifier(pin: .constant("1234"))
     */
    func pinModifier(pin: Binding<String>) -> some View {
-      let modifier = PinModifier(pin: pin)
+      let modifier: PinModifier = .init(pin: pin)
       return self.modifier(modifier) // Applies the PinModifier to the view
    }
 }

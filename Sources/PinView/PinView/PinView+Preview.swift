@@ -25,15 +25,7 @@ import SwiftUI
             .background(Color.blackOrWhite) // Sets the background color to either black or white based on the current color scheme
       }
    }
-   return ZStack { // Adds dark and light mode etc
-      Rectangle() // A rectangle to fill the background
-         .fill(Color.secondaryBackground) // Fills the rectangle with a secondary background color
-         .ignoresSafeArea(.all) // Ignores the safe area on all sides
-      VStack(spacing: .zero) { // A vertical stack with no spacing
-         DebugView() // The content view
-            .environment(\.colorScheme, .light) // Sets the environment to light mode
-         DebugView() // The content view again
-            .environment(\.colorScheme, .dark) // Sets the environment to dark mode
-      }
+   return PreviewContainer { // Adds dark and light mode etc
+      DebugView() // The content view
    }
 }

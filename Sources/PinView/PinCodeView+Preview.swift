@@ -11,14 +11,18 @@ import HapticFeedback
  * - Note: Don't add light and dark mode, it's important to see the entire design as a whole.
  * - Note: For now we can just toggle the environemtn var etc
  */
-#Preview(traits: .fixedLayout(width: 400, height: 400)) {
-   ZStack {
-      Rectangle()
-         .fill(Color.blackOrWhite)
-         .ignoresSafeArea(.all)
+#Preview(traits: .fixedLayout(width: 400, height: 640)) {
+   PreviewContainer {
       PinCodeView(count: 4) { pin in
          Swift.print("On verify - pin: \(pin)")
          HapticFeedback.play(pin == "1234" ? .success : .deny)
       }
-   }  .environment(\.colorScheme, .dark) // USe this to test modes: .light / .dark
+      .padding(.vertical)
+      .background(
+         Rectangle()
+            .fill(Color.blackOrWhite)
+//            .ignoresSafeArea(.all)
+      )
+   }
+//   .environment(\.colorScheme, .dark) // USe this to test modes: .light / .dark
 }

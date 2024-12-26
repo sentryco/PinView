@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "hapticfeedback",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sentryco/HapticFeedback",
+      "state" : {
+        "branch" : "main",
+        "revision" : "5203c44c324051ce57d44534544f57dbdb732fe9"
+      }
+    },
+    {
+      "identity" : "hybridcolor",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sentryco/HybridColor",
+      "state" : {
+        "branch" : "main",
+        "revision" : "992d3a9689b2fe54762038905c11d8c7e5d8321e"
+      }
+    }
+  ],
+  "version" : 2
+}

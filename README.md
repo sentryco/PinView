@@ -36,6 +36,9 @@ struct ContentView: View {
 .package(url: "https://github.com/sentryco/PinView", branch: "main")
 ```
 
+### Todo: 
+- Add top-level styling options through ViewBuilder + Style param drilling or environment variable
+
 ### Future improvements:
 
 1. **Focus Management & Backspace Functionality**
