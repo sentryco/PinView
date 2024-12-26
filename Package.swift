@@ -14,14 +14,14 @@ let package = Package(
     ],
     dependencies: [
       .package(url: "https://github.com/sentryco/HybridColor", branch: "main"), // Dependency for HybridColor
-      .package(url: "https://github.com/sentryco/HapticFeedback", branch: "main")
+//      .package(url: "https://github.com/sentryco/HapticFeedback", branch: "main")
     ],
     targets: [
         .target(
             name: "PinView",
             dependencies: [
-               .product(name: "HybridColor", package: "HybridColor"), // Dependency for HybridColor
-               .product(name: "HapticFeedback", package: "HapticFeedback")
+               .product(name: "HybridColor", package: "HybridColor") // , // Dependency for HybridColor
+//               .product(name: "HapticFeedback", package: "HapticFeedback")
             ]
         ),
         .testTarget(

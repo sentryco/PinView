@@ -1,6 +1,6 @@
 import SwiftUI
 import HybridColor
-import HapticFeedback
+//import HapticFeedback
 /**
  * Preview (Dark-mode)
  * - Description: Provides a preview of the `PinCodeView` in dark mode,
@@ -15,7 +15,7 @@ import HapticFeedback
    PreviewContainer {
       PinCodeView(count: 4) { pin in
          Swift.print("On verify - pin: \(pin)")
-         HapticFeedback.play(pin == "1234" ? .success : .deny)
+//         HapticFeedback.play(pin == "1234" ? .success : .deny)
       }
       .padding(.vertical)
       .background(
