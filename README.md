@@ -11,11 +11,9 @@ PinView is a custom SwiftUI view designed to simplify the input of PIN codes in 
 
 ## Features
 
-- **Light / dark mode support** Apperance is automatically adjusted to the OS settings.
-- **Support for iOS and macOS:** Seamlessly integrate with your projects for iPhone, iPad, Mac
-- **Haptic feedback:** Provide physical feedback as users type the pin.
-- **Supports custom pin length:** Set the length of the pin code to your needs.
-- **Automatic textfield focus change:** Automatically focuses the next textfield when the current one is filled.
+- 🌗 **Light / dark mode support:** Appearance is automatically adjusted to the OS settings.
+- 🔢 **Supports custom pin length:** Set the length of the pin code to your needs.
+- 🔄 **Automatic textfield focus change:** Automatically focuses the next textfield when the current one is filled.
 
 ## Example:
 ```swift
