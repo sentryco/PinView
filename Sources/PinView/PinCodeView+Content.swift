@@ -12,6 +12,7 @@ extension PinCodeView {
     *                the header, subtitle, pin input fields, and verify button into
     *                a vertical stack.
     * - Fixme: ⚠️️ Add the length? length of? elaborate
+    * fixme: use task: .task { await MainActor.run {  pinFocusState = .fieldId(0) } }
     */
    public var body: some View {
       VStack {
