@@ -40,7 +40,7 @@ extension Text {
          .padding()
          .background(Color.gray.opacity(0.2))
          .frame(maxWidth: .infinity)
-         .background(Color.blackOrWhite.opacity(1))
+         .background(Color.blackOrWhite)
          #if os(macOS)
          .padding(.horizontal)
          #endif

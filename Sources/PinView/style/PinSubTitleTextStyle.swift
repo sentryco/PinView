@@ -50,7 +50,7 @@ extension Text {
          .pinSubTitleText
          .padding()
          .frame(maxWidth: .infinity)
-         .background(Color.blackOrWhite.opacity(1))
+         .background(Color.blackOrWhite)
          #if os(macOS)
          .padding(.horizontal)
          #endif

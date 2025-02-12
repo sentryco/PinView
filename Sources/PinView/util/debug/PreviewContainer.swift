@@ -95,7 +95,7 @@ internal struct PreviewContainer<Content: View>: View {
          Spacer()
       })
       .padding(16/*Measure.margin*/)
-      .background(Color.blackOrWhite.opacity(1))
+      .background(Color.blackOrWhite)
    }
    .environment(\.colorScheme, .dark) // Sets the environment to dark mode
 }
